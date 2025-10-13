@@ -10,7 +10,9 @@ function App() {
   const [downloadUrl, setDownloadUrl] = useState('');
   const [dark, setDark] = useState(false);
 
-  const BACKEND = 'http://127.0.0.1:8000/api';
+  const BACKEND =   process.env.NODE_ENV === 'production'
+    ? 'https://file-uploader-4.onrender.com/api'
+    : 'http://127.0.0.1:8000/api';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
