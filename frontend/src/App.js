@@ -12,7 +12,7 @@ function App() {
 
   const BACKEND =   process.env.NODE_ENV === 'production'
     ? 'https://file-uploader-4.onrender.com/api'
-    : 'http://127.0.0.1:8000/api';
+    : process.env.REACT_APP_BACKEND_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
