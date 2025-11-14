@@ -98,7 +98,7 @@ function App() {
         </form>
       </main>
 
-      <footer className="footer">© 2025 Growdea Technologies</footer>
+      <footer className="footer">© 2025 All Right Reserved</footer>
     </div>
   );
 }
